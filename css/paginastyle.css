@@ -1,0 +1,73 @@
+:root {
+    --azul: #000080;
+    --amarillo: #FFD700;
+    --gris-fondo: #f8f9fa;
+}
+
+body {
+    background-color: var(--gris-fondo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navegación y Footer (Consistencia con Index) */
+.navbar, .footer-sst {
+    background-color: var(--azul) !important;
+    border-bottom: 5px solid var(--amarillo);
+}
+
+.footer-sst {
+    border-bottom: none;
+    border-top: 5px solid var(--amarillo);
+}
+
+/* Estilo de Títulos ROMEL SST */
+.azul-titulo {
+    color: var(--azul);
+    font-weight: 800;
+    border-left: 6px solid var(--amarillo);
+    padding-left: 15px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* Personalización de la Tabla Técnica */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.bg-navy {
+    background-color: var(--azul) !important;
+    color: white !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 128, 0.05); /* Un azul muy clarito para las filas */
+}
+
+/* Listas de Ventajas */
+.list-group-item {
+    border-left: 4px solid var(--azul);
+    margin-bottom: 5px;
+    border-radius: 5px !important;
+}
+
+/* Botones en la página 2 */
+.btn-amarillo {
+    background-color: var(--amarillo);
+    color: var(--azul);
+    border: 2px solid var(--azul);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-amarillo:hover {
+    background-color: var(--azul);
+    color: white;
+}
+
+/* Multimedia */
+.ratio {
+    border: 3px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}

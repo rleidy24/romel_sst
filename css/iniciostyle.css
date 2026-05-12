@@ -1,0 +1,83 @@
+:root {
+    --azul: #000080;
+    --amarillo: #FFD700;
+    --blanco-suave: #f4f7f9;
+}
+
+body {
+    background-color: var(--blanco-suave);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navegación y Footer */
+.navbar, .footer-sst {
+    background-color: var(--azul) !important;
+    border-bottom: 5px solid var(--amarillo);
+}
+
+.footer-sst {
+    border-bottom: none;
+    border-top: 5px solid var(--amarillo);
+}
+
+/* Títulos con el estilo de marca */
+.azul-titulo {
+    color: var(--azul);
+    font-weight: 800;
+    border-left: 6px solid var(--amarillo);
+    padding-left: 15px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* Botones personalizados */
+.btn-amarillo {
+    background-color: var(--amarillo);
+    color: var(--azul);
+    border: 2px solid var(--azul);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-amarillo:hover {
+    background-color: var(--azul);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Ajustes del Carrusel */
+.carousel-item img {
+    height: 500px; /* Aumentado para mejor impacto visual */
+    object-fit: cover;
+    filter: brightness(0.8); /* Oscurece un poco la imagen para que el texto resalte */
+}
+
+.carousel-caption {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Tablas y tarjetas */
+.bg-navy {
+    background-color: var(--azul);
+    color: white;
+}
+
+.shadow-sm {
+    transition: transform 0.3s ease;
+}
+
+.shadow-sm:hover {
+    transform: scale(1.02); /* Efecto sutil al pasar el mouse por las secciones */
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+    .azul-titulo {
+        font-size: 1.5rem;
+    }
+}
