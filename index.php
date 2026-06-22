@@ -46,22 +46,54 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active fw-bold" href="index.php">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link fw-bold" href="pagina2.php">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="quienes_somos.php">Quiénes Somos</a></li>
                     <li class="nav-item"><a class="nav-link fw-bold text-warning" href="tabla_usuarios.php">Administrar</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <!-- CARRUSEL DE IMÁGENES ACTUALIZADO -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+        </div>
         <div class="carousel-inner">
+            <!-- Primera Imagen (Link de Pinterest) -->
             <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&h=500&fit=crop" class="d-block w-100" alt="Seguridad">
+                <img src="https://i.pinimg.com/1200x/47/75/83/477583a8951f9516214784e010022b9d.jpg" class="d-block w-100" alt="Seguridad">
                 <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                    <h5>Propiedad Horizontal Segura</h5>
-                    <p>Implementación de normas y señalización preventiva.</p>
+                    <h5>Seguridad Industrial y Prevención</h5>
+                    <p>Implementación de normas, señalización preventiva y cuidado laboral.</p>
+                </div>
+            </div>
+            <!-- Segunda Imagen (Local) -->
+            <div class="carousel-item">
+                <img src="imagenes/Gemini_Generated_Image_6gi3fd6gi3fd6gi3.png" class="d-block w-100" alt="Salud Ocupacional">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                    <h5>Salud y Bienestar Laboral</h5>
+                    <p>Protección integral y entornos de trabajo mucho más seguros.</p>
+                </div>
+            </div>
+            <!-- Tercera Imagen (Local) -->
+            <div class="carousel-item">
+                <img src="imagenes/Gemini_Generated_Image_3zzp7d3zzp7d3zzp.png" class="d-block w-100" alt="Asesoría SST">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                    <h5>Sistemas de Gestión (SG-SST)</h5>
+                    <p>Cumplimiento de la normativa legal con acompañamiento técnico experto.</p>
                 </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
     </div>
 
     <div class="container my-5">
